@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(43, 85, 102);
+    color: aliceblue;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100vw;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1% 1fr 1fr 1fr 1%;
+    grid-template-rows: auto auto;
+    
+}
+
+.aboutme, .experience {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+
+}
+.aboutme {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.me {
+    grid-row: 1 / 2;
+    grid-column: 4 / 6;
+    width: 200px;
+
+}
+
+/* .aboutme h3 {
+    padding: 1em;
+} */
+
+.experience {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+
+}
+
+/* .experience h3 {
+    padding: 1em;
+} */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    width:20vw;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.github img {
+    width: 48px;
+}
+
+footer h5 {
+    text-align: center;
+}
